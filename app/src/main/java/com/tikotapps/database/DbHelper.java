@@ -19,7 +19,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public static final String COLUMN_LANGUAGE = "language";
 
     public static DbHelper singleton = null;
- 
+
     public static DbHelper getInstance(Context context) {
         if (singleton == null)
             singleton = new DbHelper(context.getApplicationContext());
